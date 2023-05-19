@@ -1,0 +1,44 @@
+.promo {
+    margin-top: 90px;
+    .container {
+        display: grid;
+        grid-template-columns: 700px 440px;
+        grid-template-rows: 60px 50px 260px 240px;
+        justify-content: center;
+    }
+    &_header{
+        line-height: 42px;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &_subheader {
+        align-self: center;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &_services {
+        align-self: center;
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_service {
+        width: 150px;
+        &_descr {
+            text-align: center;
+        }
+    }
+    &_img {
+        grid-row: 1/5;
+        grid-column: 2/3;
+        justify-self: end;
+        width: 380px;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.header {
+    position: relative;
+    height: 50px;
+    nav {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        padding: 5px 0;
+        z-index: 5;
+        background-color: #000;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        &_link {
+            font-weight: 300;
+            font-size: 15px;
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                color: #25ca8b;
+            }
+        }
+        &_item {
+            list-style-type: none;
+            border-right: 2px solid #fff;
+            padding-right: 60px;
+            &:last-child {
+                border-right: none;
+            }   
+        }
+    }
+    .hamburger {
+        display: none;
+    }
+}

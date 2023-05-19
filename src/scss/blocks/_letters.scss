@@ -1,0 +1,17 @@
+.letters {
+    margin-top: 90px;
+    &_header {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item {
+        width: 200px;
+        height: 400px;
+    }
+}

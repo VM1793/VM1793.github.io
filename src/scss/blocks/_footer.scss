@@ -1,0 +1,36 @@
+.footer {
+    min-height: 230px;
+    position: relative;
+    background-color: #000;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+        column-gap: 15px;
+    }
+    &_social {
+        width: 370px;
+        place-self: center;
+        display: flex;
+        &-item {
+            display: block;
+            width: 50px;
+            margin: 0 5px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &_main {
+        width: 370px;
+        place-self: center;
+    }
+    &_contacts {
+        width: 370px;
+        place-self: center;
+        &-adress {
+            color: #fff;
+        }
+    }
+   
+}

@@ -1,0 +1,42 @@
+* {
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #000;
+    .logo {
+        position: fixed;
+        width: 160px;
+        left: 20px;
+        top: 20px;
+        z-index: 6;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+h2.header {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@import 'blocks/buttons';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/team';
+@import 'blocks/product';
+@import 'blocks/letters';
+@import 'blocks/application';
+@import 'blocks/footer';
+
+@import 'blocks/media';
