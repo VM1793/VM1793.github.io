@@ -14,7 +14,7 @@
     .menu {
         display: flex;
         justify-content: space-between;
-        padding: 13px 40px;
+        padding: 13px 70px;
         margin: 0;
         list-style-type: none;
         &_link {
@@ -33,7 +33,7 @@
                 content: '';
                 position: absolute;
                 top: 20px;
-                padding-left: 90px;
+                padding-left: 75px;
                 height: 20px;
                 border-right: 1px solid #fff;
             }
