@@ -14,8 +14,5 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu_active');
         });
     });
-
     new WOW().init();
 });
-
-

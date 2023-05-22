@@ -19,19 +19,16 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item">
-                        <a href="#" class="menu_link">Главная</a>
+                        <a href="#main" class="menu_link">Главная</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#" class="menu_link">Услуги</a>
+                        <a href="#team" class="menu_link">О нас</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#" class="menu_link">Кнопка</a>
+                        <a href="#product" class="menu_link">Услуги</a>
                     </li>
                     <li class="menu_item">
-                        <a href="#" class="menu_link">Кнопка</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#" class="menu_link">Контакты</a>
+                        <a href="#contacts" class="menu_link">Контакты</a>
                     </li>
                     <li class="menu_item">
                         <button class="button button_menu">Оставить заявку</button>
@@ -45,7 +42,7 @@
             </div>
         </nav>
     </header>
-    <section class="promo">
+    <section id="main" class="promo">
         <div class="container">
             <h1 class="promo_header">Заголовок H1</h1>
             <h2 class="promo_subheader">Короткое описание/слоган</h2>
@@ -69,7 +66,7 @@
             </div>
         </div>
     </section>
-    <section class="team">
+    <section id="team" class="team">
         <div class="container">
             <h2 class="header">Команда</h2>
             <div class="team_wrapper">
@@ -100,7 +97,7 @@
             </div>
         </div>
     </section>
-    <section class="product">
+    <section id="product" class="product">
         <div class="container">
             <h2 class="header">Услуги</h2>
             <div class="product_wrapper">
@@ -131,16 +128,49 @@
             </div>
         </div>
     </section>
-    <section class="application">
+    <section id="contacts" class="application">
         <div class="container">
-            <h2 class="header">оставьте заявку</h2>
-            <div class="application_subheader">и мы перезвоним вам в течении 10 минут</div>
-            <form action="#" class="application_form">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
-            </form>
+            <h2 class="header">контакты</h2>
+            <div class="application_wrapper">
+                <div class="">
+                    <div class="application_title">Оставьте Вашу заявку<br> и мы перезвоним вам в течении 10 минут</div>
+                    <form action="#" class="application_form">
+                        <input name="name" required placeholder="Ваше имя" type="text">
+                        <input name="phone" required placeholder="Ваш телефон">
+                        <input name="email" required placeholder="Ваш E-mail" type="email">
+                        <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+                    </form>
+                </div>
+                <div class="application_contacts">
+                    <div class="application_title">Свяжитесь с нами любым удобным для вас способом:</div>
+                    <div class="application_phone">
+                        Телефон:
+                        <a href="tel:#" class="application_number">+7 (777) 77-77-77</a>
+                    </div>
+                    <div class="application_social">
+                        Социальные сети:
+                        <a href="#" class="application_social-item">
+                            <img src="icons/Icons_in.png" alt="IG">
+                        </a>
+                        <a href="#" class="application_social-item">
+                            <img src="icons/Icons_fb (1).png" alt="FB">
+                        </a>
+                    </div>
+                    <div class="application_messangers">
+                        Мессенджеры:
+                        <a href="#" class="application_messangers-item">
+                            <img src="icons/Icons_tg.png" alt="TG">
+                        </a>
+                        <a href="#" class="application_messangers-item">
+                            <img src="icons/Icons_whats app.svg" alt="WP">
+                        </a>
+                    </div>
+                    <div class="application_mail">
+                        Или напишите нам на почту:
+                        <a href="mailto:#">mail@gmail.com</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="letters">

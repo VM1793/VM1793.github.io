@@ -1,5 +1,5 @@
 .product {
-    margin-top: 90px;
+    padding-top: 90px;
     &_header {
         font-weight: 700;
         font-size: 30px;
@@ -18,7 +18,7 @@
         align-items: center;
     }
     &_img {
-        width: 200px;
+        width: 170px;
         img {
             width: 100%;
         }
