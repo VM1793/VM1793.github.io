@@ -7,9 +7,9 @@ body {
     background-color: #000;
     .logo {
         position: fixed;
-        width: 160px;
-        left: 120px;
-        top: 18px;
+        width: 90px;
+        left: 180px;
+        top: 10px;
         z-index: 6;
         img {
             width: 100%;
@@ -39,5 +39,6 @@ h2.header {
 @import 'blocks/letters';
 @import 'blocks/application';
 @import 'blocks/footer';
-
+@import 'blocks/modal';
+@import 'blocks/animations';
 @import 'blocks/media';

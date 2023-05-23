@@ -2,7 +2,7 @@
     padding-top: 90px;
     .container {
         display: grid;
-        grid-template-columns: 700px 440px;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 60px 50px 260px 240px;
         justify-content: center;
     }

@@ -5,6 +5,22 @@
             left: 33px;
             width: 90px;
         }
+    }
+    .sidepanel {
+        right: 20px;
+    }
+    .container {
+        max-width: 1120px;
+    }
+    .promo {
+        &_img {
+            padding-right: 20px;
+        }
+    }
+    .product {
+        &_img {
+            width: 140px;
+        }
     } 
 }
 
@@ -13,7 +29,7 @@
         .logo {
             top: 10px;
             left: 10px;
-            width: 100px;
+            width: 80px;
         }
     }
     .container {
@@ -21,8 +37,12 @@
     }
     .header {
         .menu {
+            padding: 13px 100px;
             &_item {
                 padding-right: 20px;
+                &::after {
+                    padding-left: 55px;
+                }
             }
             &_link {
                 font-size: 13px;
@@ -34,9 +54,85 @@
             font-size: 13px;
         }
     }
-   
-
+    .footer {
+        &_social {
+            width: 310px;
+        }
+        &_main {
+            width: 310px;
+        }
+        &_contacts {
+            width: 310px;
+        }
+    }
 }
+
+@media (max-width: 992px) {
+    .sidepanel {
+        &_link {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        .menu {
+            padding: 13px 40px;
+            &_item {
+                padding-right: 20px;
+                &::after {
+                    padding-left: 40px;
+                }
+            }
+            &_link {
+                font-size: 13px;
+            }
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 32px;
+        }
+        &_subheader {
+            font-size: 20px;
+        }
+        &_img {
+            width: 280px;
+        }
+    }
+    .team {
+        &_wrapper {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+        &_item {
+            width: 300px;
+        }
+    }
+    .application {
+        &_contacts {
+            width: 320px;
+        }
+    }
+    .footer {
+        &_social {
+            width: 230px;
+            &-item {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &_main {
+            width: 230px;
+        }
+        &_contacts {
+            width: 230px;
+        }
+    }
+}
+
 
 @media (max-width: 768px) {
     .container {
@@ -66,9 +162,14 @@
                 padding-right: 0;
                 border: none;
                 margin: 20px 0;
+                width: 150px;
+                &::after {
+                    display: none;
+                }
             }
             &_link {
                 font-size: 20px;
+                text-align: center;
             }
         }
         .hamburger {

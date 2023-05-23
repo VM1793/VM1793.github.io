@@ -27,4 +27,16 @@
     &_promo {
         align-self: center;
     }
+    &_bot {
+        width: 200px;
+        position: fixed;
+        z-index: 6;
+        bottom: 25px;
+        right: 90px;
+        font-size: 17px;
+        text-transform: none;
+    }
+    &_submit {
+        margin-top: 10px;
+    }
 }
