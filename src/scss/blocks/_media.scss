@@ -45,13 +45,13 @@
                 }
             }
             &_link {
-                font-size: 13px;
+                font-size: 14px;
             }
         }
     }
     .button {
         &_menu {
-            font-size: 13px;
+            font-size: 14px;
         }
     }
     .footer {
@@ -59,7 +59,13 @@
             width: 310px;
         }
         &_main {
+            flex-direction: column;
+            align-items: center;
             width: 310px;
+            a {
+                display: block;
+                line-height: 30px;
+            }
         }
         &_contacts {
             width: 310px;
@@ -91,7 +97,21 @@
             }
         }
     }
+    .button {
+        &_menu {
+            font-size: 13px;
+        }
+        &_bot {
+            height: 40px;
+            width: 190px;
+            font-size: 15px;
+        }
+    }
     .promo {
+        padding-top: 70px;
+        .container {
+            grid-template-rows: 60px 50px 260px 60px;
+        }
         &_header {
             font-size: 32px;
         }
@@ -102,10 +122,15 @@
             width: 280px;
         }
     }
+    .product {
+        &_item {
+            width: 220px;
+        }
+    }
     .team {
         &_wrapper {
             flex-wrap: wrap;
-            row-gap: 30px;
+            row-gap: 50px;
         }
         &_item {
             width: 300px;
@@ -126,20 +151,35 @@
         }
         &_main {
             width: 230px;
+            a {
+                font-size: 15px;
+            }
         }
         &_contacts {
             width: 230px;
+            &-phone {
+                font-size: 15px;
+            }
+            &-adress {
+                font-size: 15px;
+            }
         }
     }
 }
 
 
 @media (max-width: 768px) {
+    .sidepanel {
+        display: none;
+    }
     .container {
         max-width: 540px;
     }
-    .logo {
-        display: none;
+    body {
+        .logo {
+            width: 65px;
+            z-index: 6;
+        }
     }
     .header {
         .menu {
@@ -153,7 +193,7 @@
             height: 100vh;
             padding: 20px 15px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             transition: 0.6s all;
             &_active {
                 left: 0;
@@ -162,14 +202,18 @@
                 padding-right: 0;
                 border: none;
                 margin: 20px 0;
-                width: 150px;
+                width: 200px;
+                height: 35px;
+                text-align: center;
                 &::after {
                     display: none;
                 }
             }
             &_link {
-                font-size: 20px;
-                text-align: center;
+                font-size: 18px;
+                &:hover {
+                    color: #fff;
+                }
             }
         }
         .hamburger {
@@ -208,9 +252,168 @@
     .button {
         &_menu {
             width: 200px;
-            font-size: 20px;
+            font-size: 18px;
             background-color:rgba(0, 0, 0, 0);
-
+            &:hover {
+                color: #fff;
+            }
+        }
+        &_promo {
+            width: 240px;
+            font-size: 14px;
         }
     }
+    .promo {
+        padding-top: 40px;
+        &_header {
+            font-size: 30px;
+        }
+        &_subheader {
+            font-size: 18px;
+        }
+        &_img {
+            padding: 0;
+            width: 260px;
+        }
+    }
+    .product {
+        &_wrapper {
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        &_item {
+            width: 100%;
+        }
+    }
+    .team {
+        &_wrapper {
+            justify-content: center;
+        }
+        &_item {
+            width: 520px;
+        }
+    }
+    .application {
+        &_wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+    .footer {
+        &_social {
+            width: 160px;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            &-item {
+                width: 40px;
+                height: 40px;
+                padding: 0 5px;
+            }
+        }
+        &_main {
+            width: 180px;
+            a {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+        &_contacts {
+            width: 160px;
+            &-phone {
+                font-size: 14px;
+            }
+            &-adress {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .overlay {
+        right: 0;
+    }
+    .modal {
+        width: 90%;
+        padding: 30px 5px;
+        &_close {
+            right: 5px;
+            top: 5px;
+            color: purple;
+        }
+    }
+    .button {
+        &_bot {
+            display: none;
+        }
+        &_promo {
+            justify-self: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        .container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 60px 50px 520px 60px;
+        }
+        &_header {
+            justify-self: center;
+        }
+        &_subheader {
+            justify-self: center;
+        }
+        &_img {
+            grid-column: 1;
+            grid-row: 3 / 4;
+            justify-self: center;
+            height: 488px;
+            width: 320px;
+        }
+    }
+    .footer {
+        .container {
+            grid-template-rows: repeat(3, 60px);
+            grid-template-columns: 1fr;
+            column-gap: 10px;
+        }
+        &_social {
+            grid-row: 1 / 2;
+            row-gap: 10px;
+            width: 100%;
+            justify-content: center;
+            &-item {
+                width: 40px;
+                height: 40px;
+                padding: 0 5px;
+            }
+        }
+        &_main {
+            grid-row: 2 / 3;
+            width: 100%;
+            a {
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+        &_contacts {
+            grid-row: 3 / 4;
+            width: 100%;
+            &-phone {
+                display: block;
+                align-self: center;
+                font-size: 13px;
+            }
+            &-adress {
+                display: block;
+                font-size: 13px;
+            }
+        }
+    }
+    
 }
