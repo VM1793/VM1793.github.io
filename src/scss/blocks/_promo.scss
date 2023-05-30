@@ -3,7 +3,7 @@
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 60px 50px 260px 240px;
+        grid-template-rows: 160px 50px 200px 200px;
         justify-content: center;
     }
     &_header{
@@ -19,6 +19,9 @@
         font-weight: 500;
         text-transform: uppercase;
         margin: 0;
+    }
+    &_descr {
+        align-self: center;
     }
     &_services {
         align-self: center;
