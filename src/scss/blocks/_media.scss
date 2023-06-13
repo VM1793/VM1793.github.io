@@ -2,7 +2,7 @@
     body {
         .logo {
             top: 10px;
-            left: 33px;
+            left: 30px;
             width: 90px;
         }
     }
@@ -11,11 +11,6 @@
     }
     .container {
         max-width: 1120px;
-    }
-    .promo {
-        &_img {
-            padding-right: 20px;
-        }
     }
     .product {
         &_img {
@@ -54,9 +49,17 @@
             font-size: 14px;
         }
     }
-    .promo {
-        .container {
-            grid-template-rows: 190px 80px 200px 140px;
+    .team {
+        &_item {
+            width: 220px;
+        }
+        &_img {
+            height: 330px;
+        }
+    }
+    .letters {
+        &_slider {
+            width: 860px;
         }
     }
     .footer {
@@ -115,26 +118,35 @@
     .promo {
         padding-top: 70px;
         .container {
-            grid-template-rows: 120px 70px 180px 60px;
-            grid-template-columns: 390px 330px;
+            grid-template-rows: 60px 70px 210px 60px;
         }
         &_header {
             font-size: 28px;
-            line-height: 32px;
         }
         &_subheader {
             font-size: 20px;
         }
         &_descr {
             font-size: 14px;
+            align-self: center;
         }
         &_img {
-            width: 280px;
+            width: 338px;
         }
     }
     .product {
         &_item {
-            width: 220px;
+            width: 240px;
+        }
+        &_title {
+            text-align: center;
+        }
+        &_descr {
+            font-size: 14px;
+            margin: 20px 0 0 30px;
+        }
+        &_descr_cons {
+            margin: 20px 0 0 15px;
         }
     }
     .team {
@@ -145,10 +157,21 @@
         &_item {
             width: 300px;
         }
+        &_descr {
+            font-size: 14px;
+        }
+        &_img {
+            height: 450px;
+        }
     }
     .application {
         &_contacts {
             width: 320px;
+        }
+    }
+    .letters {
+        &_slider {
+            width: 620px;
         }
     }
     .footer {
@@ -163,6 +186,7 @@
             width: 230px;
             a {
                 font-size: 15px;
+                text-align: center;
             }
         }
         &_contacts {
@@ -269,7 +293,7 @@
             }
         }
         &_promo {
-            width: 240px;
+            width: 230px;
             font-size: 14px;
         }
     }
@@ -277,6 +301,8 @@
         padding-top: 40px;
         .container {
             grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 30px 60px 192px 60px;
+            column-gap: 20px;
         }
         &_header {
             font-size: 23px;
@@ -285,11 +311,11 @@
             font-size: 16px;
         }
         &_descr {
+            align-self: start;
             font-size: 12px;
         }
         &_img {
-            padding: 0;
-            width: 260px;
+            width: 289px;
         }
     }
     .product {
@@ -300,6 +326,9 @@
         }
         &_item {
             width: 100%;
+        }
+        &_descr {
+            margin: 20px 0 0 10px;
         }
     }
     .team {
@@ -315,6 +344,15 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 50px;
+        }
+    }
+    .letters {
+        &_slider {
+            padding-top: 30px;
+            width: 65%;
+        }
+        &_img {
+            height: 160px;
         }
     }
     .footer {
@@ -350,6 +388,7 @@
     .overlay {
         right: 0;
     }
+
     .modal {
         width: 90%;
         padding: 30px 5px;
@@ -366,34 +405,62 @@
         &_promo {
             justify-self: center;
             width: 100%;
-            height: 100%;
+        }
+        &_submit {
+            width: 100%;
         }
     }
     .container {
         max-width: 100%;
         padding: 0 10px;
+        margin: 0;
     }
     .promo {
+        padding-top: 46px;
         .container {
             grid-template-columns: 1fr;
-            grid-template-rows: 60px 50px 520px 60px;
+            grid-template-rows: 50px 60px 343px 160px 65px;
         }
         &_header {
-            font-size: 19px;
+            font-size: 38px;
             justify-self: center;
+            text-align: center;
         }
         &_subheader {
+            text-align: center;
             justify-self: center;
         }
         &_img {
             grid-column: 1;
             grid-row: 3 / 4;
             justify-self: center;
-            height: 488px;
-            width: 320px;
+            height: 343px;
+            // width: 100%;
+        }
+        &_descr {
+            align-self: center;
+        }
+    }
+    .product {
+        &_descr {
+            margin: 20px 25px 0 35px;
+        }
+    }
+    .application {
+        &_left {
+            width: 100%;
+        }
+        &_form {
+            width: 100%;
+        }
+    }
+    .team {
+        &_img {
+            height: 404px;
         }
     }
     .footer {
+        padding-top: 80px;
         .container {
             grid-template-rows: repeat(3, 60px);
             grid-template-columns: 1fr;
