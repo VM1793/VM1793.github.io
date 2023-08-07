@@ -3,34 +3,16 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
 }
 
 body {
-    background-color: #000;
-    .logo {
-        position: fixed;
-        width: 90px;
-        left: 80px;
-        top: 10px;
-        z-index: 6;
-        img {
-            width: 100%;
-        }
-    }
+    margin: 0;
 }
 
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
-}
-
-h2.header {
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 @import 'blocks/buttons';
@@ -40,8 +22,8 @@ h2.header {
 @import 'blocks/team';
 @import 'blocks/product';
 @import 'blocks/letters';
+@import 'blocks/about';
 @import 'blocks/application';
 @import 'blocks/footer';
 @import 'blocks/modal';
-@import 'blocks/animations';
-@import 'blocks/media';
+// @import 'blocks/media';

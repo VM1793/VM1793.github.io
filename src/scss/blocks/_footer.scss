@@ -1,41 +1,52 @@
 .footer {
-    min-height: 200px;
-    position: relative;
-    background-color: #000;
+    &::before {
+        content: '';
+        display: block;
+        height: 110px;
+        background-color: #2c2c2c;
+        
+    }
+    &::after {
+        content: '';
+        display: block;
+        height: 100px;
+        background-color: #2c2c2c;
+        
+    }
     .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 200px;
-        column-gap: 15px;
-    }
-    &_social {
-        width: 370px;
-        place-self: center;
+        min-height: 310px;
+        position: relative;
         display: flex;
-        &-item {
-            display: block;
-            width: 50px;
-            height: 50px;
-            padding: 0 5px;
-            img {
-                width: 100%;
-            }
-        }
     }
-    &_main {
-        width: 370px;
-        place-self: center;
-        display: flex;
-        column-gap: 10px;
-    }
-    &_contacts {
-        width: 370px;
-        place-self: center;
+    &_item {
+        width: 380px;
         display: flex;
         flex-direction: column;
-        &-adress {
-            color: #fff;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #000;
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        &:last-child {
+            border: none;
         }
     }
-   
+    &_img {
+        width: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    &_social {
+        display: inline-block;
+        width: 30px;
+        img {
+            width: 100%;
+        }
+        &:last-child {
+            margin-left: 10px;
+        }
+    }
 }

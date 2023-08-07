@@ -1,47 +1,45 @@
 .header {
-    position: relative;
-    height: 50px;
-    nav {
-        top: 0;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+
+    .container {
         position: fixed;
-        width: 100%;
-        height: 50px;
-        padding: 5px 0;
-        z-index: 5;
-        background-color: #000;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #fff;
     }
-    
+    &_title {
+        margin-top: 36px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #666666;
+        text-decoration: none;
+    }
+    nav {
+        margin-top: 24px;
+        width: 500px;
+    }
     .menu {
         display: flex;
         justify-content: space-between;
-        padding: 13px 70px;
         margin: 0;
+        padding: 0 5px;
         list-style-type: none;
+        border-top: 1px solid #a7a7a7;
+        border-bottom: 1px solid #a7a7a7;
+        height: 60px;
+        &_item {
+            align-self: center;
+        }
         &_link {
             font-weight: 500;
-            font-size: 16px;
-            color: #fff;
+            font-size: 18px;
             text-decoration: none;
+            color: #9e9e9e;
             &:hover {
-                color: rgb(179, 1, 237);
+                color: #000;
             }
-        }
-        &_item {
-            width: 100px;
-            padding-right: 60px;
-            &::after {
-                content: '';
-                position: absolute;
-                top: 20px;
-                padding-left: 75px;
-                height: 20px;
-                border-right: 1px solid #fff;
-            }
-            &:last-child {
-                &::after {
-                    display: none;
-                }
-            }   
         }
     }
     .hamburger {

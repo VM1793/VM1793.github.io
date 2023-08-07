@@ -1,14 +1,17 @@
 .button {
     width: 300px;
     height: 50px;
-    background: rgb(179, 1, 237);
-    border-radius: 5px;
-    border: none;
+    border: 2px solid #666666;
     font-weight: 500;
     font-size: 15px;
-    color: #FFFFFF;
-    text-transform: uppercase;
+    background-color: #fff;
     cursor: pointer;
+    &:hover {
+        color: #fff;
+        background-color: #666666;
+        transition: 0.5s;
+
+    }
     &_menu {
         background: none;
         width: 140px;
@@ -19,13 +22,26 @@
         color: #fff;
         text-decoration: none;
         text-transform: none;
-        &:hover {
-            color: rgb(179, 1, 237);
 
-        }
     }
     &_promo {
-        align-self: end;
+        align-self: start;
+    }
+    &_product {
+        display: block;
+        margin: 0 auto;
+    }
+    &_about {
+        margin-top: 70px;
+        background-color: rgb(153, 153, 153);
+        color:#fff;
+        &:hover {
+            color: #000;
+            background-color: #fff;
+            transition: 0.5s;
+            border: 1px solid #000;
+    
+        }
     }
     &_bot {
         width: 200px;
@@ -35,9 +51,23 @@
         right: 90px;
         font-size: 17px;
         text-transform: none;
+        border: none;
+        box-shadow: 0 0 2px #fff;
+        background-color: rgb(51, 51, 51);
+        color: #fff;
+        border-radius: 50px;
     }
     &_submit {
         margin-top: 10px;
-        width: 340px;
+        width: 100%;
+        background-color: #666666;
+        color:#fff;
+        &:hover {
+            color: #000;
+            background-color: #fff;
+            transition: 0.5s;
+            border: 1px solid #000;
+    
+        }
     }
 }

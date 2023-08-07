@@ -7,16 +7,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
+    height: 160px;
     z-index: 3;
     &_link {
-        width: 60px;
-        height: 60px;
+        box-shadow: 0 0 3px #fff;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
         img {
             width: 100%;
-        }
-        &-animated {
-            animation: beat 2.5s linear infinite;
         }
     }
 }
