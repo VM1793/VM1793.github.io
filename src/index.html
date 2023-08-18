@@ -12,8 +12,10 @@
 <body>
     <button data-modal="consultation" class="button button_bot">Напишите нам</button>
     <aside class="sidepanel">
-        <a href="#" class="sidepanel_link"><img src="icons/fb.png" alt="WP"></a>
-        <a href="#" class="sidepanel_link"><img src="icons/ig.png" alt="WP"></a>
+        <a href="https://www.facebook.com/maria.vapilova" class="sidepanel_link"><img src="icons/fb.png" alt="FB"></a>
+        <a href="https://www.instagram.com/winwin_digital" class="sidepanel_link"><img src="icons/ig.png" alt="IG"></a>
+        <a href=" https://wa.me/+77066000751" class="sidepanel_link"><img src="icons/wa.png" alt="WA"></a>
+        <a href="https://t.me/vapilova_digital" class="sidepanel_link"><img src="icons/tg.png" alt="TG"></a>
     </aside>
     <div class="header" id="header">
         <div class="container">
@@ -39,6 +41,11 @@
                         <a href="tel:+77066000751" class="menu_link">+7 706 600 0751</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </div>
@@ -47,7 +54,7 @@
             <div class="promo_title">
                 Get the Most Out of Your Digital Strategy
             </div>
-            <button class="button button_promo">Оставить заявку</button>
+            <button data-modal="callback" class="button button_promo">Оставить заявку</button>
             <div class="promo_img"><img src="img/img_1.webp" alt="img_1"></div>
         </div>
    </div>
@@ -112,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button button_product">Оставить заявку</button>
+            <button data-modal="callback" class="button button_product">Оставить заявку</button>
         </div>
    </section>
    <section class="about" id="about">
@@ -122,7 +129,7 @@
                     <div class="about_header">Привет, меня зовут Мария</div>
                     <div class="about_subheader">Моя работа заключается в том, чтобы помочь компаниям достичь своих целей в digital-маркетинге и эффективно использовать свой бюджет на рекламу</div>
                     <div class="about_descr">Я опытный специалист в области digital- маркетинга, который работает в этой сфере уже более 10 лет. За это время я приобрела богатый опыт и знания в различных областях Digital-маркетинга, таких как контекстная и таргетированная реклама, видеореклама, SEO и другие. Я предоставляю тренинги для сотрудников компаний по обучению digital-рекламы, а также провожу консультации для улучшения текущих рекламных кампаний и создания новых. Мой опыт и знания помогают моим клиентам увеличить свой потенциал на рынке и повысить эффективность своих рекламных кампаний.</div>
-                    <button class="button button_about">Оставить заявку</button>
+                    <button data-modal="callback" class="button button_about">Оставить заявку</button>
                 </div>
                 <div class="about_img">
                     <img src="img/maria.jpg" alt="photo">
@@ -183,6 +190,39 @@
             </div>
         </div>
    </footer>
+
+   <div class="overlay">
+        <div class="modal" id="callback">
+            <div class="modal_close">&times;</div>
+            <div class="modal_subtitle">Просто заполните форму заявки</div>
+            <div class="modal_descr">И я свяжусь с вами в ближайшее время</div>
+            <form action="#" class="application_form">
+                <input name="name" placeholder="Ваше имя*" type="text">
+                <input name="phone" placeholder="Ваш телефон*">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">Заказать звонок</button>
+            </form>            
+        </div>
+
+        <div class="modal" id="consultation">
+            <div class="modal_close">&times;</div>
+            <div class="modal_subtitle">Напишите нам</div>
+            <div class="modal_descr">Мы ответим в ближайшее время</div>
+            <form action="#" class="application_form">
+                <input name="name" placeholder="Ваше имя*" type="text">
+                <input name="email" placeholder="Ваш E-mail*" type="email">
+                <textarea name="text" id="text" cols="1" rows="6" placeholder="Ваше сообщение"></textarea>
+                <button class="button button_submit">Отправить</button>
+            </form>            
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal_close">&times;</div>
+            <div class="modal_subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal_descr">Наш менеджер свяжется с вами в ближайшее время!</div>            
+        </div>
+    </div>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

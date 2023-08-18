@@ -2,6 +2,11 @@
     height: 110px;
     display: flex;
     justify-content: center;
+    &_logo {
+        img {
+            width: 100%;
+        }
+    }
 
     .container {
         position: fixed;

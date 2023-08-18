@@ -72,14 +72,4 @@ $(document).ready(function(){
 
     new WOW().init();
 
-    $('.letters_slider').slick({
-        autoplay: true,
-        speed:1200,
-        adaptiveHeight: true,
-        variableWidth: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_4_left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_4.png"></button>',
-    
-      });
-
 });
