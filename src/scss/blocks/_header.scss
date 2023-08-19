@@ -2,7 +2,12 @@
     height: 110px;
     display: flex;
     justify-content: center;
+
     &_logo {
+        margin-left: 80px;
+        width: 150px;
+        align-self: center;
+
         img {
             width: 100%;
         }
@@ -12,18 +17,25 @@
         position: fixed;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        max-width: 1440px;
         background-color: #fff;
+        z-index: 10;
     }
     &_title {
-        margin-top: 36px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        width: 470px;
         font-size: 28px;
         font-weight: bold;
         color: #666666;
         text-decoration: none;
     }
     nav {
-        margin-top: 24px;
-        width: 500px;
+        align-self: center;
+        justify-self: center;
+        margin-right:80px;
+        width: 520px;
     }
     .menu {
         display: flex;

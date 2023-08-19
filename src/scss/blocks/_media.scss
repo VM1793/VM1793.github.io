@@ -41,7 +41,7 @@
     }
     .header {
         &_title {
-            width: 300px;
+            width: 350px;
             font-size: 26px;
         }
         nav {
@@ -90,11 +90,9 @@
     }
     .header {
         &_logo {
-            margin-top: 10px;
-            width: 130px;
+            width: 120px;
         }
         &_title {
-            margin: 25px 0 0 20px;
             width: 170px;
             font-size: 24px;
         }
@@ -201,14 +199,22 @@
     }
     .header {
         .container {
-            grid-template-columns: 170px 300px 70px;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 768px;
+        }
+        &_logo {
+            margin-left: 20px;
         }
         &_title {
-            margin: 36px 0 0 0;
-            width: 230px;
+            align-self: center;
+            justify-self: center;
+            margin: 0;
+            width: 300px;
+            text-align: center;
         }
         nav {
-            width: 70px;
+            width:90px;
+            margin-right: 20px;
         }
         .menu {
             position: fixed;
@@ -247,11 +253,11 @@
         .hamburger {
             display: block;
             position: absolute;
-            right: 20px;
+            right: 25px;
             top: 50%;
             transform: translateY(-50%);
             width: 30px;
-            height: 12px;
+            height: 18px;
             span {
                 display: block; 
                 height: 3px;
@@ -292,6 +298,12 @@
             grid-row: 3 / 4;
             justify-self: center;
         }
+        &_about {
+            margin-bottom: 20px;
+        }
+        &_submit {
+            margin-bottom: 20px;
+        }
     }
     .promo {
         padding-top: 40px;
@@ -313,67 +325,66 @@
         }
     }
     .product {
-        &_wrapper {
-            align-items: center;
-            flex-direction: column;
-            gap: 50px;
-        }
         &_item {
             width: 100%;
+            padding: 50px 0;
+            max-height: 380px;
+        }
+        &_title {
+            margin-right: 20px; 
+            width: 200px;
+            font-size: 28px;
         }
         &_descr {
-            margin: 20px 0 0 10px;
+            width: 230px;
         }
     }
-    .team {
+    .about {
         &_wrapper {
-            justify-content: center;
+            flex-wrap: wrap;
         }
         &_item {
-            width: 520px;
+            width: 538px;
+        }
+        &_img {
+            width: 538px;
+            height: 500px;
         }
     }
     .application {
         &_wrapper {
             flex-wrap: wrap;
             justify-content: center;
-            gap: 50px;
         }
-    }
-    .letters {
-        &_slider {
-            padding-top: 30px;
-            width: 65%;
+        &_title {
+            width: 538px;
+            font-size: 36px;
         }
         &_img {
-            height: 160px;
+            width: 530px;
+            height: 260px;
+        }
+        &_message {
+            width: 538px;
         }
     }
     .footer {
-        &_social {
-            width: 160px;
+        &::before {
+            height: 60px;
+        }
+        &::after {
+            height: 60px;
+        }
+        .container {
             flex-wrap: wrap;
-            row-gap: 10px;
-            &-item {
-                width: 40px;
-                height: 40px;
-                padding: 0 5px;
-            }
         }
-        &_main {
-            width: 180px;
-            a {
-                text-align: center;
-                font-size: 14px;
-            }
-        }
-        &_contacts {
-            width: 160px;
-            &-phone {
-                font-size: 14px;
-            }
-            &-adress {
-                font-size: 14px;
+        &_item {
+            width: 540px;
+            border-right: none;
+            border-bottom: 1px solid #000;
+            height: 150px;
+            p {
+                margin: 10px 0;
             }
         }
     }
@@ -381,6 +392,22 @@
 @media (max-width: 576px) {
     .overlay {
         right: 0;
+    }
+
+    .header {
+        .container {
+            max-width: 576px;
+        }
+        &_logo {
+            margin-left: 5px;
+        }
+        &_title {
+
+        }
+        nav {
+            margin-right: 5px;
+        }
+
     }
 
     .modal {
