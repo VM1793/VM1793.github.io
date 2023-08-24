@@ -396,8 +396,9 @@
 
     .header {
         .container {
-            max-width: 576px;
-            grid-template-columns: 1fr 3fr 1fr;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0;
         }
         &_logo {
             margin-left: 5px;
@@ -420,7 +421,7 @@
         &_close {
             right: 5px;
             top: 5px;
-            color: purple;
+            color: #000;
         }
     }
     .button {
@@ -429,6 +430,7 @@
         }
         &_promo {
             justify-self: center;
+            align-self: center;
             width: 100%;
         }
         &_submit {
@@ -437,51 +439,64 @@
     }
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 20px;
         margin: 0;
     }
     .promo {
-        padding-top: 46px;
+        padding-top: 10px;
         .container {
-
+            grid-template-rows: 1fr 155px 100px;
         }
         &_title {
-            width: 470px;
-        }
-        &_subheader {
+            width: 100%;
             text-align: center;
-            justify-self: center;
         }
         &_img {
-            justify-self: center;
-            height: 343px;
             width: 100%;
-        }
-        &_descr {
-            align-self: center;
         }
     }
     .product {
-        &_descr {
-            margin: 20px 25px 0 35px;
+        &_item {
+            flex-wrap: wrap;
+            padding: 30px 0;
         }
+        &_title {
+            width: 80%;
+            margin: 0;
+            font-size: 27px;
+        }
+        &_descr {
+            padding-top: 20px;
+            width: 100%;
+        }
+    }
+    .about {
+        padding-top: 20px;
+        &_item {
+            width: 100%;
+        }
+        &_img {
+            width: 100%;
+            height: 380px;
+        }    
     }
     .application {
-        &_left {
+        margin-top: 70px;
+        &_title {
             width: 100%;
         }
-        &_form {
-            width: 100%;
-        }
-    }
-    .team {
         &_img {
-            height: 404px;
+            width: 100%;
         }
     }
     .footer {
         padding-top: 80px;
-
+        &::before {
+            height: 40px;
+        }
+        &::after {
+            height: 40px;
+        }
     }
     
 }
